@@ -26,7 +26,7 @@
     width: 100%;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
-    color: #9B9B9B;
+    color: #FFFFFF;
   }
   .clearfix::after {
     content: " ";
@@ -82,7 +82,7 @@
   a {
     font-family: 'Open Sans', Helvetica, sans-serif;
     font-size: 16px;
-    color: #333333;
+    color: #FFFFFF;
   }
   ul {
     padding: 0;
@@ -140,7 +140,7 @@
   
   /* Site Footer */
   .footer {
-    background-color: #333333;
+    background-color: #7395ae;
     color: #FFFFFF;
     padding: 30px;
     text-align: center;
@@ -185,8 +185,8 @@
     border: none;
     box-shadow: none;
     transition: border-color 0.5s ease;
-    background-color: #333333;
-    color: #FFFFFF;
+    background-color: #5d5c61;
+    color: #C3D4E0;
     font-size: 16px;
   }
   input {
@@ -200,7 +200,7 @@
   /* 6. Page Styles
   ======================================== */
   .photo-hero {
-    background-color: #888888;
+    background-color: #5d5c61;
     min-height: 700px;
   }
   .photo-hero-text {
@@ -211,7 +211,7 @@
     margin: 1em 0 40px;;
   }
   .photo-hero h1 span {
-    color: #333333;
+    color: #b1a296;
   }
   .photo-hero p {
     color: #FFFFFF;
@@ -236,7 +236,7 @@
     height: auto;
   }
   .photo-blockquote {
-    background-color: #999999;
+    background-color: #557a95;
     margin-top: -80px;
     padding-bottom: 80px;
   }
@@ -263,7 +263,7 @@
     font-weight: 700;
     text-transform: uppercase;
     text-align: center;
-    color: #F9F9F9;
+    color: #C3D4E0;
   }
   
   .photo-about, .photo-contact {
@@ -271,7 +271,7 @@
     padding: 80px 0;
   }
   .photo-about h2 {
-    color: #888888;
+    color: #b1a296;
     margin-bottom: 30px;
   }
   .photo-about p {
@@ -280,7 +280,7 @@
     text-align: left;
   }
   .photo-contact {
-    background-color: #555555;
+    background-color: #8E8D94;
   }
   .photo-contact h2 {
     color: #FFFFFF;
