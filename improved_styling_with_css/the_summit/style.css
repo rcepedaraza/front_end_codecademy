@@ -1,0 +1,60 @@
+a{
+    color: #2176ff;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+a:hover{
+    text-decoration: none;
+}
+
+.nav-link{
+    text-decoration: none;
+}
+
+.nav-link:hover{
+    color: #6495ff;
+}
+
+.btn{
+    font-family: "Ralewayy", sans-serif;
+    background-color: #2176FF;
+    border-radius: 2px;
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 14px;
+    text-decoration: none;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-color: #FFF;
+    color: #2176FF;
+    transition: color 1s ease-in, background-color 1s ease-in;
+}
+
+.btn:active{
+    font-size: 18px;
+    transition: font-size .1s ease-in-out;
+}
+
+
+.activity{
+    border: 1px solid #2176FF;
+    cursor: pointer;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.activity:hover{
+    background-color: #FFF;
+    color: #5495ff;
+    transition: color .1s ease-in, background-color 1s ease-in;
+}
+
+.activity:active{
+    font-size: 50px;
+    transition: font-size .1s;
+}
