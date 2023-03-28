@@ -46,11 +46,15 @@ header {
 header .content {
   display: flex;
   align-items: center;
-  padding: 1.875rem;
+  padding: 0 1.875rem;
+  height: 5.3rem;
 }
 
 header .logo {
   flex: 1;
+  font-size: 1.5rem;
+  font-family: "Roboto";
+  color: #4a4a4a;
 }
 
 header nav ul {
@@ -59,6 +63,10 @@ header nav ul {
 
 nav li {
   padding-left: 3.5rem;
+  color: #4a4a4a;
+  font-size: 1rem;
+  font-family: "Roboto Mono";
+  line-height: 1.6;
 }
 
 nav a {
@@ -66,9 +74,10 @@ nav a {
   line-height: 1.6;
   font-size: 1rem;
   color: #4a4a4a;
+  font-family: "Roboto Mono";
 }
-
 header .icon {
+
   width: 1rem;
   padding-left: .75rem;
 }
@@ -117,13 +126,20 @@ header .mobile {
   justify-content: flex-start;
   align-items: flex-start;
   height: 43.5rem;
+  background-image: url("../images/banner-landingpage.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
 }
 
 #sign-up-cta {
   padding: 0 5rem 2.5rem 5rem;
+  margin-top: 10.62rem;
+  margin-bottom: 10.62rem;
+  margin-left: 6.25rem;
   border: solid 1px #979797;
   border-radius: 4px;
-  background-color: #9dc20b;
+  background-color: #9dc20a;
 }
 
 #sign-up-cta .content {
@@ -149,16 +165,28 @@ header .mobile {
 
 #sign-up-cta .cursive {
   font-family: "Damion", cursive;
+  margin-top: 2rem;
 }
 
 #sign-up-cta .striking {
   font-family: "Rubik", sans-serif;
   padding-bottom: .75rem;
+  color: white;
+  font-size: 3.125rem;
+  line-height: 1.4;
+}
+
+#sign-up-cta .email span{
+  color: white;
+  font-size: 1.25rem;
+  font-family: "Roboto";
+  line-height: 1.4;
 }
 
 #sign-up-cta .button {
   margin-top: 1.625rem;
   padding: 1.25rem 7.25rem;
+  font-size: 1.25rem;
 }
 
 @media only screen and (max-width: 760px) {
@@ -231,6 +259,7 @@ header .mobile {
 
 .feature h2 {
   padding-bottom: .5rem;
+  padding-top: 2.5rem;
   font-size: 2.25rem;
   font-weight: bold;
   color: #4a4a4a;
@@ -241,6 +270,11 @@ header .mobile {
   line-height: 1.2;
   font-weight: 300;
   color: #4a4a4a;
+}
+
+.image-container img{
+  display: block;
+  max-width: 100%;
 }
 
 @media only screen and (max-width: 890px) {
@@ -284,6 +318,7 @@ header .mobile {
   font-size: 2.25rem;
   font-weight: bold;
   color: white;
+  opacity: 100%;
 }
 
 #filters-section .content h3 {
@@ -294,8 +329,10 @@ header .mobile {
 }
 
 #filters-section .images-container {
+  display: flex;
   max-width: 100%;
   padding: 0 1%;
+  column-gap: 5px;
 }
 
 @media only screen and (max-width: 760px) {
@@ -332,13 +369,14 @@ header .mobile {
 
 #quotes-section {
   background-color: #f3f3f3;
+  padding: 5rem 0;
 }
 
 #quotes-section content {
   padding: 5rem 0;
 }
 
-#quotes-section quote {
+#quotes-section .quote {
   padding-right: 1.875rem;
   font-family: "Palatino", serif;
   font-size: 1.875rem;
