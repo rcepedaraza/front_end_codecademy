@@ -4,12 +4,14 @@ html {
 
 body{
     font-family: 'Fauna One', serif;
+    background-color: #faf9f7;
 }
 
 h1,
 h2,
 h3 {
     font-family: 'Cinzel', serif;
+    font-weight: bold;
 }
 
 /* Header */
@@ -17,40 +19,160 @@ h3 {
 header .logo-icons {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: baseline;
     margin: 0 .5rem;
+    border-bottom: 1px solid #4E6A70;
 }
 
 .logo-icons .left-logo {
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-family: 'Dancing Script', cursive;
     letter-spacing: 1.75px;
     font-weight: bolder;
+    min-width: 220px;
+    color: #4E6A70;
 }
 
 .header-links ul{
     display: inline-flex;
     list-style: none;
-    font-size: 0.75rem;
+    font-size: 1rem;
+    padding-left: 0;
+    min-width: 570px;
+
 }
 
 .right-icons {
     display: inline-flex;
     align-items: baseline;
+    min-width: 160px;
 }
 
 .right-icons .material-symbols-outlined{
     height: 1rem;
     width: 1rem;
     padding: 0 0.75rem;
+    color: #778D89;
 }
 
 .header-links a{
-    padding-right: .75rem;
+    padding:0 2rem;
     text-decoration: none;
-    color: black;
-    font-size: 0.65rem;
+    color: #2F4858;
+    font-size: 0.8rem;
 }
 
-nav .header-links{
+.header-links a:hover{
+    text-decoration: underline;
+    text-decoration-color: #c0b283;
+}
+
+/* Main image */
+
+.main-image-container {
+    position: relative ;
+}
+
+.main-image-container img {
+    max-inline-size: 100%;
+    block-size: auto;
+    min-width: 960px;
+    object-fit: cover;
+}
+
+.main-image-container .text-block {
+    position: absolute;
+    bottom: 4rem;
+    left: 4rem;
+    color: #404a42;
+}
+.image-text-block h2,
+.text-block h2 {
+    font-size: 2.5rem;
+    color: #2F4858;
+}
+
+
+/* body images */
+
+.image-container {
+    display: flex;
+}
+
+.image-right {
+    flex-direction: row-reverse;
+}
+
+.image-container img {
+    object-fit: cover;
+    max-width: 50%;
+}
+
+.image-text-block {
+    padding: 2rem 10% 0 5%;
+}
+
+.image-text-block P {
+    line-height: 1.526rem;
+    color: #4E6A70;
+    font-weight: bold;
+}
+
+.overview {
+    padding-bottom: 25px;
+    border-bottom: 1px solid #D1D3CC;
+}
+
+/* footer */
+
+footer{
+    margin-top: 100px;
+    /* margin-left: 5%; */
+    padding-bottom: 15px;
+}
+
+#sign-up-text p {
+    font-size: 1.5rem;
+    margin-left: 25px;
+}
+
+#sign-up-text {
+    border-bottom: 1px solid rgb(180, 187, 195);
+}
+
+#sign-up-banner {
+    margin-bottom: 25px;
+}
+
+#sign-up-banner input{
+    margin-left: 25px;
+    height: 50px;
+    text-align: left;
+    font-weight: 400;
+    padding-left: 1rem;
+}
+
+#sign-up-banner button {
+    height: 50px;
+    margin-left: 15px;
+    background: rgb(250, 249, 247);
+    border-radius: 3px;
+    border-width: 1px;
+    font-size: 14px;
+    letter-spacing: 1px;
+    line-height: 1;
+    text-align: center;
+    cursor: pointer;
+}
+
+#sign-up-banner button:hover {
+    background-color: #2F4858;
+    color: #FAF9F7;
+}
+
+.copyright {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 15px;
+    font-size: 0.75rem;
 }
