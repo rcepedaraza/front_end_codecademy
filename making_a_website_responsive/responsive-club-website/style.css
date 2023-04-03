@@ -1,0 +1,70 @@
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Header */
+
+.header-contactus {
+    display: flex;
+    font-size: 0.75rem;
+    justify-content: end;
+    align-items: baseline;
+    background-color: #faf9f7;
+}
+
+.header-icons {
+    margin: 0 2%;
+}
+
+.header-icons i {
+    padding: 0 5px;
+}
+
+/* Main header */
+
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+}
+
+.logo h1 {
+    font-family: 'Cinzel Decorative', cursive;
+    margin: 0 15px;
+    font-size: 3rem;
+}
+
+.nav-links {
+    margin-right: 27.375px;
+}
+
+.nav-links ul{
+    list-style: none;
+}
+.main-header ul li {
+    display: inline;
+    margin: 0 25px;
+}
+.main-header a:hover {
+    color: #0081cf;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: black;
+}
+
+.nav-links button {
+    font-size: 1rem;
+}
+
+.nav-links button:hover {
+    background-color: #0081cf;
+    color:white;
+    border-radius: 5px;
+}
