@@ -27,7 +27,7 @@ body {
 nav {
   position: fixed;
   z-index: 5;
-  left: -17.8em;
+  left: -20em;
   display: flex;
   align-items: center;
   height: 100%;
@@ -39,7 +39,7 @@ nav {
   line-height: 2.2;
   font-weight: bold;
   color: #142033;
-
+  transition: left 450ms ease-in-out;
 }
 
 nav:hover {
@@ -68,7 +68,7 @@ nav ol {
 nav a {
   text-decoration: none;
   color: inherit;
-
+  transition: color 750ms linear;
 }
 
 nav a:hover,
@@ -175,6 +175,7 @@ header h2 {
 
 .definable .word {
   color: #639eff;
+  transition: color 750ms;
 
 }
 
@@ -195,7 +196,9 @@ header h2 {
   opacity: 0;
   font-family: "Proza Libre", sans-serif;
   font-size: 1.5rem;
-
+  transition: 
+    top 760ms linear 1s,
+    opacity 450ms;
 }
 
 .definable:hover .definition-container {
@@ -243,7 +246,7 @@ header h2 {
   font-weight: bold;
   text-decoration: none;
   color: #ffffff;
-
+  transition: opacity 450ms ease-in ;
 }
 
 .button:hover {
