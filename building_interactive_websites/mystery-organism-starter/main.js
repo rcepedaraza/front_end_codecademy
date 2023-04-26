@@ -29,13 +29,24 @@ const pAequorFactory = (num, dnaArray) => {
       return this.dna;
     },
     compareDNA (pAequor) {
-      
+      var commonality = 0;
+      for (let i = 0; i < pAequor.dna.length; i++) {
+        if (this.dna[i] === pAequor.dna[i]) {
+          commonality++;
+        }
+      }
+      commonality = (commonality / pAequor.dna.length) * 100;
+      console.log(`\nSpecimen #${this.specimenNum}:\n${this.dna}`);
+      console.log(`\nSpecimen #${this.specimenNum}:\n${pAequor.dna}`);
+      console.log(`\nSpecimen #${this.specimenNum} and Specimen #${pAequor.specimenNum} have ${commonality.toFixed(2)}% DNA in common.`)
     }
   
   }
 }
 
 obj = pAequorFactory(1, mockUpStrand());
-console.log(obj.dna);
-obj.mutate();
-console.log(obj.dna);
+// console.log(obj.dna);
+// obj.mutate();
+// console.log(obj.dna);
+
+obj.compareDNA(pAequorFactory(2, mockUpStrand()));
