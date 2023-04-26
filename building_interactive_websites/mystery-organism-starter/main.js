@@ -36,9 +36,22 @@ const pAequorFactory = (num, dnaArray) => {
         }
       }
       commonality = (commonality / pAequor.dna.length) * 100;
-      console.log(`\nSpecimen #${this.specimenNum}:\n${this.dna}`);
+      console.log(`Specimen #${this.specimenNum}:\n${this.dna}`);
       console.log(`\nSpecimen #${this.specimenNum}:\n${pAequor.dna}`);
       console.log(`\nSpecimen #${this.specimenNum} and Specimen #${pAequor.specimenNum} have ${commonality.toFixed(2)}% DNA in common.`)
+    },
+    willLikelySurvive () {
+      var countBases = 0
+      for (let i = 0; i < this.dna.length; i++) {
+        if (this.dna[i] === 'C' || this.dna[i] === 'G') {
+          countBases++;
+        }
+      }
+      if ((countBases / this.dna.length) * 100 >= 60) {
+        return true;
+      } else {
+        return false;
+      }
     }
   
   }
@@ -50,3 +63,17 @@ obj = pAequorFactory(1, mockUpStrand());
 // console.log(obj.dna);
 
 obj.compareDNA(pAequorFactory(2, mockUpStrand()));
+// console.log(obj.willLikelySurvive());
+
+var pAequorSurvive = [];
+var specimenNum = 1;
+while (pAequorSurvive.length < 30) {
+  pAequorObj = pAequorFactory(specimenNum, mockUpStrand());
+  if (pAequorObj.willLikelySurvive()) {
+    pAequorSurvive.push(pAequorObj);
+    specimenNum++;
+  }
+}
+// console.log(pAequorSurvive.length);
+console.log(pAequorSurvive);
+
