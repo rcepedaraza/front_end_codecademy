@@ -2,6 +2,8 @@ body {
     margin: 0 2rem;
 }
 
+/* HEADER */
+
 nav {
     display: flex;
     align-items: center;
@@ -19,16 +21,21 @@ nav {
     align-items: center;
     justify-content: space-around;
     list-style-type: none;
-    margin: 0 8rem;
+    margin: 0 5rem;
     padding-left: 0;
 }
 
 .navigation-item {
     /* margin: 0 1rem; */
-    /* width: 75px; */
+    width: 75px;
     text-align: center;
     text-decoration: none;
     font-size: 1.15rem;
+}
+
+.navigation-item a {
+    text-decoration: none;
+    color: black;
 }
 
 .sub-button {
@@ -44,7 +51,18 @@ nav {
     line-height: 24px;
     opacity: 1;
     outline: 0 solid transparent;
-    padding: 8px 25px;
+    padding: 8px 15px;
     width: auto;
     border: 0;
+}
+
+/* MAIN CONTENT */
+
+.introduction {
+    display: flex;
+}
+
+.introduction img {
+    width: 50%;
+    height: auto;
 }
