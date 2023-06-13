@@ -3,8 +3,9 @@
     <head>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Allura&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Allura&family=Lato&display=swap" rel="stylesheet">        
         <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/c472de6212.js" crossorigin="anonymous"></script>
         <title>Ricardo Cepeda Raza</title>
     </head>
     <body>
@@ -20,15 +21,144 @@
                 </ul>
                 <button class="sub-button" type="button">Subscribe</button>
             </nav>
+            <div class="header-text">
+                <p>Computer Engineer | Data Scientist</p>
+                <h1>Hi, I'm <span>Ricardo</span></h1>
+                <!-- <img src="./images/profile_pic_yellow-modified.png" alt="Ricardo in the forest"> -->
+            </div>
         </header>
-        <div class="introduction">
-            <img src="./images/intro_pic.jpg" alt="Ricardo in the forest">
-            <p>
-                I'm a data science and machine learning engineer with a background in computer engineering. I have gained experience in data science by analyzing data and knowing how to extract meaning from it, using a series of methods, algorithms, systems, and tools to extract insights from structured and unstructured data.
-            </p>
+        <div id="aboutme">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <h2>About Me</h2>                        
+                        <p>
+                            As a data science and machine learning engineer with a computer engineering background, I have developed skills in data analysis and interpretation. I can apply various techniques, methods, algorithms, systems, and tools to extract insights from structured and unstructured data. I have experience in working with different types of data sources and formats, such as text, images, audio, video, and sensor data. I can also design and implement machine learning models and pipelines to solve complex problems and generate value from data.
+                        </p>
+                    </div>
+                    <div class="about-col-2">
+                        <div class="tab-titles">
+                            <p class="tab-links" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>Data Science</span><br>
+                                    <li>Python Programming Language</li>
+                                    <li>Statistic and Probability concepts</li>
+                                    <li>Data wrangling and cleaning skills</li>
+                                    <li>Data visualization tools and techniques</li>
+                                    <li>Machine learning and deep learning methods</li>
+                                    <li>Cloud computing platforms and services</li>
+                                </li>
+                                <li><span>Front-End Development</span><br>
+                                    <li>HTML, CSS and JavaScript</li>
+                                    <li>Responsive web design</li>
+                                    <li>Bootstrap and JQuery</li>
+                                    <li>React, Angular</li>
+                                    <li>Git and GitHub</li>
+                                </li>
+                                <li><span>Computer engineering</span><br>
+                                        <li>Coding in Python, Java, C++</li>
+                                        <li>Debugging and testing software</li>
+                                        <li>Computer Architecture and organization</li>
+                                        <li>Operating systems and networks</li>
+                                        <li>Software engineering and design</li>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>Mar 2022 - Jan 2023</span><br>Data Science Fellow at <span>Springboard</span> </li>
+                                <li><span>Aug 2019 - Aug 2020</span><br>Machine Learning Intern at <span>The Walt Disney Company</span> </li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>2023</span><br>Data Science Career Track, Springboard</li>
+                                <li><span>2022</span><br>Deep Learning Nanodegree Program, Udacity</li>
+                                <li><span>2022</span><br>TensorFlow Developer Professional Certificate, Coursera</li>
+                                <li><span>2021</span><br>Data Science Career Path, CodeCademy</li>
+                                <li><span>2020</span><br>Bachelor of Science in Computer Engineering, California State University, Fullerton</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <main></main>
+
+        <!-- Projects -->
+
+        <div id="projects">
+            <div class="container">
+                <h2>My Projects</h2>
+                <div class="projects-list">
+                    <div>
+                        <i class="fa-solid fa-code"></i>
+                        <h3>Toxic Comments Classification</h3>
+                        <p>
+                            Implemented model that’s capable of detecting different types of toxicity in social media comments like twitter using Natural Language Processing. Used pandas, NumPy, and seaborn for data processing and visualization, and Scikit-Learn library to train the machine learning model. Classified online toxic comments into five different categories with 90% accuracy on a test dataset.
+                        </p>
+                        <a href="https://github.com/rcepedaraza/toxic-comment-classification">Learn more</a>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-code"></i>
+                        <h3>Diabetic Retinopathy Detection Using Deep Learning</h3>
+                        <p>
+                            Built a Deep Learning model from thousands of images collected in rural areas using the Kaggle API to access the dataset. Used torchvision and OpenCV for image transformation and training of the model that will recognize the severity of diabetic retinopathy on images of the human eye. Predicted diabetic retinopathy with an accuracy of 70% given a clear eye image that helps to speed up disease detection.
+                        </p>
+                        <a href="https://github.com/rcepedaraza/diabetic-retinopathy">Learn more</a>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-code"></i>
+                        <h3>Prediction of Absenteeism at Work</h3>
+                        <p>
+                            Created a model that predict absenteeism at work using Python, SQL, machine learning methods, and Tableau for visualizations. Built a Logistic Regression model with a test accuracy greater than 80% by using cross-validation and evaluating different estimators’ performance. Developed model that predicts whether an employee can be expected to be missing for a specific number of hours in each workday.
+                        </p>
+                        <a href="https://github.com/rcepedaraza/absenteeism_at_work">Learn more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- contact -->
+
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h2>Contact Me</h2>
+                        <p><i class="fa-solid fa-paper-plane"></i>rcepedaraza@gmail.com</p>
+                        <div class="social-icons">
+                            <a href="https://www.linkedin.com/in/ricardo-cepeda-raza/"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="https://github.com/rcepedaraza"><i class="fa-brands fa-github"></i></a>
+                            <a href="https://www.instagram.com/ricardo_cepeda_raza/"><i class="fa-brands fa-instagram"></i></a>
+                        </div>
+                    </div>
+                    <div class="contact-right">
+                        <form action="">
+                            <input type="text" name="Name" placeholder="Your Name" required>
+                            <input type="email" name="email" placeholder="Your Email" required>
+                            <textarea name="Message" id="" cols="30" rows="10" placeholder="Your Meesage"></textarea>
+                            <button type="submit" class="btn">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <footer></footer>
+        <script>
+            // var tablinks = document.getElementsByClassName("tab-links");
+            var tabcontents = document.getElementsByClassName("tab-contents");
+            function opentab (tabname) {
+                for (tabcontent of tabcontents) {
+                    tabcontent.classList.remove("active-tab")
+                }
+                document.getElementById(tabname).classList.add("active-tab")
+            }
+        </script>
         <script src="script.js"></script>
     </body>
 </html>

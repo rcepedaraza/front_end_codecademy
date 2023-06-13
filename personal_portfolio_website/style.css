@@ -1,8 +1,20 @@
 body {
     margin: 0 2rem;
+    /* background-color: #1c1c1c; */
+    background-color: #2F4858;
+    color: #FFFFFF;
+    font-family: 'Lato', sans-serif;
 }
 
 /* HEADER */
+header {
+    background-image: url("./images/profile_pic_yellow-modified.png");
+    background-position: right;
+    background-size: 50%;
+    background-repeat: no-repeat;
+    height: 125vh;
+}
+
 
 nav {
     display: flex;
@@ -11,7 +23,7 @@ nav {
 
 #logo {
     font-family: 'Allura', cursive;
-    font-weight: 500;
+    font-weight: 700;
     font-size: 3.5rem;
 }
 
@@ -29,21 +41,25 @@ nav {
     /* margin: 0 1rem; */
     width: 75px;
     text-align: center;
-    text-decoration: none;
     font-size: 1.15rem;
 }
 
 .navigation-item a {
     text-decoration: none;
-    color: black;
+    color: #FFF;
+    position: relative;
+}
+
+.navigation-item a:hover {
+    color: #FFDE59;
 }
 
 .sub-button {
-    background: #5E5DF0;
+    background: #ffde59;
     border-radius: 999px;
-    box-shadow: #5E5DF0 0 10px 20px -10px;
+    box-shadow: #ffde59 0 10px 20px -10px;
     box-sizing: border-box;
-    color: #FFFFFF;
+    color: #080808;
     cursor: pointer;
     /* font-family: Inter,Helvetica,"Apple Color Emoji","Segoe UI Emoji",NotoColorEmoji,"Noto Color Emoji","Segoe UI Symbol","Android Emoji",EmojiSymbols,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans",sans-serif; */
     font-size: 16px;
@@ -56,13 +72,201 @@ nav {
     border: 0;
 }
 
-/* MAIN CONTENT */
-
-.introduction {
-    display: flex;
+.header-text {
+    margin-top: 20%;
+    font-size: 25px;
 }
 
-.introduction img {
-    width: 50%;
-    height: auto;
+.header-text h1 {
+    font-size: 60px;
+}
+
+.header-text span {
+    color: #ffde59;
+}
+
+/* About Me */
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.about-col-1 {
+    flex-basis: 50%;
+}
+
+.about-col-2 {
+    flex-basis: 50%;
+}
+
+.about-col-1 h2 {
+    font-size: 45px;
+    font-weight: 600;
+    color: #FFF;
+}
+
+.about-col-1 p {
+    font-size: 1.45rem;
+    line-height: 150%;
+}
+
+.tab-titles {
+    display: flex;
+    margin: 20px 0 40px;
+}
+
+.tab-links {
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+
+.tab-contents ul li{
+    list-style: none;
+    margin: 10px 0;
+}
+
+.tab-contents ul li span {
+    color: #A47246;
+    font-size: 14px;
+}
+
+.tab-contents {
+    display: none;
+}
+
+.tab-contents.active-tab {
+    display: block;
+}
+
+/* Projects */
+
+#projects {
+    padding: 30px 0;
+}
+
+.container h2 {
+    font-size: 45px;
+}
+
+.projects-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+
+.projects-list div {
+    background-color: #F0F2F4;
+    color: #080808;
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 300;
+    border-radius: 15px;
+    transition: background 0.5s, transform 0.5s;
+}
+
+.projects-list div i {
+    font-size: 60px;
+    margin-bottom: 30px;
+}
+
+.projects-list div h3 {
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.projects-list div a {
+    text-decoration: none;
+    color: #423B42;
+    font-size: 12px;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.projects-list div:hover {
+    background-color: #FFDE59;
+    transform: translateY(-10px);
+}
+
+/* Contact */
+
+.contact-left {
+    flex-basis: 35%;
+}
+.contact-right {
+    flex-basis: 60%;
+}
+
+.contact-left p {
+    margin-top: 30px;
+
+}
+
+.contact-left p i {
+    color: #F0F2F4;
+    margin-right: 15px;
+    font-size: 25px;
+}
+
+.social-icons {
+    margin-top: 30px;
+}
+
+.social-icons a {
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    color: #FFDE59;
+    display: inline-block;
+    transition: transform 0.5s;
+}
+
+.social-icons a:hover {
+    color: #F0F2F4;
+    transform: translateY(-5px);
+}
+
+.btn {
+    display: inline-block;
+    background: #FFDE59;
+}
+
+.contact-right form{
+    width: 100%;
+}
+
+form input, form textarea {
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #423B42;
+    padding: 15px;
+    margin: 15px 0;
+    color: #FFF;
+    font-size: 18px;
+    border-radius: 6px;
+
+}
+
+form .btn {
+    padding: 14px 60px;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+    border-radius: 15px;
+    color: #423B42;
+}
+
+/* Responsive design for small screens */
+
+@media only screen and (max-width: 600px) {
+    #header {
+        background-image: ;
+    }
 }
